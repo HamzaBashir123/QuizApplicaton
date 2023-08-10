@@ -1,0 +1,133 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.mainDiv{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.centerDiv{
+    display: inline-block;
+    width: 70%;
+    height: 60%;
+    border: 2px solid grey;
+    box-shadow: 2px 2px 20px grey;
+    border-radius: 10px;
+    padding: 50px;
+    position:relative
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-weight: 800;
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+
+  .goToHomePage{
+
+      /* border: 3px solid red; */
+      width: 100%;
+      font-size: larger;
+      border-radius: 10px;
+      height: 40px;
+      cursor: pointer;
+  }
+
+
+  /* ============================ */
+  .wrapper-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 70%;
+      /* border: 3px solid red; */
+  }
+  .progress-bar {
+      background: transparent;
+      width: 200px;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px; 
+      position: relative;
+  }
+  .progress-bar:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      /* background: #444; */
+      z-index: 0;
+  }
+  /*===== The CSS =====*/
+  .progress{
+      width: 200px;
+      height: 280px;
+      z-index: 1;
+  }
+  .progress .track, .progress .fill{
+      fill: rgba(0, 0, 0, 0);
+      stroke-width: 3;
+      transform: rotate(90deg)translate(0px, -80px);
+  }
+  .progress .track{
+      stroke: #20313e;
+  }
+  .progress .fill {
+      stroke: rgb(42, 133, 42);
+      stroke-dasharray: 219.99078369140625;
+      stroke-dashoffset: -219.99078369140625;
+      transition: stroke-dashoffset 3s;
+  }
+  .progress .value {
+      fill: rgb(42, 133, 42);
+      text-anchor: middle;
+      
+  }
+  .progress .text {
+      font-size: 12px;
+      fill: #fff;
+      text-anchor: middle;
+  }
+
+  .passFail{
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .centerDiv{
+        display: inline-block;
+        width: 90%;
+        height: 80%;
+        /* border: 2px solid grey; */
+        box-shadow: 2px 2px 20px grey;
+        border-radius: 10px;
+        padding: 20px;
+        position:relative
+    }
+    .passFail{
+        text-align: center;
+        padding-bottom: 10px;
+        /* border: 2px solid grey; */
+
+      }
+      .goToHomePage{
+
+        /* border: 3px solid red; */
+        width: 100%;
+        font-size: medium;
+        border-radius: 10px;
+        height: 35px;
+        cursor: pointer;
+    }
+    
+}

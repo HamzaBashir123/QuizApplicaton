@@ -1,0 +1,141 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.mainDiv{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.centerDiv{
+    display: inline-block;
+    width: 70%;
+    height: 60%;
+    border: 2px solid grey;
+    box-shadow: 2px 2px 20px grey;
+    border-radius: 10px;
+    padding: 50px;
+    position:relative
+}
+.radioDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    /* border: 2px solid grey; */
+    
+
+
+}
+.radioDiv label{
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.timer{
+    border: 2px solid grey;
+    padding: 10px;
+    border-radius: 7px;
+}
+.startButoonDiv{
+    /* border: 2px solid grey; */
+    width: 90%; 
+    display: flex !important;
+    justify-content: space-between !important;
+     align-items: center !important;
+    text-align: center !important;
+}
+.endDiv{
+    /* border: 2px solid grey; */
+    position: absolute;
+    /* margin-top: auto ; */
+    bottom: 30px ;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.buttons1{
+    position: relative;
+    /* border: 2px solid forestgreen; */
+
+}
+
+
+.nextQuestionClass{
+  
+    padding: 10px 35px;
+    border-radius: 5px;
+    color: white;
+    background-color: grey;
+    cursor: pointer;
+    opacity: 0.7;
+    
+}
+.btnCenter{
+    border: 20px solid black;
+
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+    .centerDiv{
+        display: inline-block;
+        width: 90%;
+        height: 80%;
+        /* border: 2px solid grey; */
+        box-shadow: 2px 2px 20px grey;
+        border-radius: 10px;
+        padding: 20px;
+        position:relative
+    }
+    .quizApplicationHeading{
+        font-size: 25px !important;
+    }
+    .timer{
+        font-size: 15px !important;
+
+    }
+    .question{
+        font-size: 25px !important;
+    }
+    .radioDiv{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        height: 50%;
+        overflow-x: scroll;
+        /* border: 2px solid grey; */
+
+    
+    }
+    .radioDiv label{
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .numbersShow{
+        font-size: 15px !important;
+    }
+    .nextQuestionClass{
+  
+        padding: 8px 25px;
+        border-radius: 5px;
+        color: white;
+        background-color: grey;
+        cursor: pointer;
+        opacity: 0.7;
+        
+    }
+}
+
+
+
+
